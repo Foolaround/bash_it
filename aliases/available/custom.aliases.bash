@@ -1,0 +1,27 @@
+# Robert's very own aliases, don't want to mess around in bash_it standards or cramp up my .bash_profile
+
+alias start_mysql="/usr/local/mysql/bin/mysqld_safe &"
+alias cdts="cd ~/Sites/tolingo/tolingo-site"
+alias cds="cd ~/Scripts"
+alias gitdiff='git log|grep commit|cut -d " " -f2|head -n 2|xargs -n 2 git diff -R|mate'
+alias dir="ls -AFGl"
+
+alias tarit="tar xvfz"
+alias .="open ."
+alias ..="cd .."
+alias h="cd $HOME"
+alias mate="open -a TextMate.app"
+alias m="mate ."
+alias r="bundle exec rake"
+alias be="bundle exec"
+alias c="./script/console"
+alias s="./script/server"
+alias js="JRUBY_OPTS="" jruby --ng-server&"
+alias sql="mysqld_safe"
+alias mi="bundle exec rake db:migrate"
+alias reset="rake db:migrate:reset"
+alias pull="git pull --rebase && rake gems:install && mi"
+alias push="git push"
+alias gst="git st"
+alias cap="ssh-add; be cap"
+alias rt="bundle exec rake tolingo:tests:all"
