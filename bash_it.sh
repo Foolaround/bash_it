@@ -62,6 +62,9 @@ then
   . $HOME/.jekyllconfig
 fi
 
+#no stupid freezing...
+stty stop ''
+
 
 #
 # Custom Help
